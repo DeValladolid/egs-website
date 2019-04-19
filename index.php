@@ -223,6 +223,29 @@ $rarityid = json_decode($file, true);
             
             
         </div>
+        <script>
+            $(document).ready(function(){
+            $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+             });
+</script>
 
  <!-- SCRIPTS -->
     
@@ -277,27 +300,4 @@ $rarityid = json_decode($file, true);
 </script>
     
 </body>
-<script>
-            $(document).ready(function(){
-            $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-             });
-            </script>
 </html>
