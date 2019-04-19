@@ -236,30 +236,7 @@ $rarityid = json_decode($file, true);
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="lazyload/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="lazyload/jquery.lazy.plugins.min.js"></script>
-    <!-- DataTables CSS -->
-<link href="css/addons/datatables.min.css" rel="stylesheet">
-<!-- DataTables JS -->
-<script href="js/addons/datatables.min.js" rel="stylesheet"></script>
-
-<!-- DataTables Select CSS -->
-<link href="css/addons/datatables-select.min.css" rel="stylesheet">
-<!-- DataTables Select JS -->
-<script href="js/addons/datatables-select.min.js" rel="stylesheet"></script>
-    <script>
-    $(function() {
-        $('.lazy').lazy({
-          effect: "fadeIn",
-          effectTime: 2000,
-          threshold: 0
-        });
-    });
-    </script>
-    <script>
-    $(document).ready(function () {
-    $('#dtBasicExample').DataTable();
-    $('.dataTables_length').addClass('bs-select');
-    });
-</script>
+    
 <script src="script.js"></script>
     
 </body>
