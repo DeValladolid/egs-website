@@ -94,7 +94,7 @@ $rarityid = json_decode($file, true);
             .StoreRow-card_79057ee9 {
                 width: fit-content !important;
             }
-            .games {
+            .data {
                 padding-top: 20px;
             }
             .row {
@@ -167,11 +167,11 @@ $rarityid = json_decode($file, true);
 
         <div class="container black-skin">
             
-                    <div class="row games">
+                    <div class="row data">
                     <?php
                         for ($i = 0; $i < count($image_data['games']); $i ++) {
                             ?>
-                            <div class="col-sm-4 games" id="<?php echo $image_data['games'][$i]['category'] ?>">
+                            <div class="col-sm-4 data" id="<?php echo $image_data['games'][$i]['category'] ?>">
                               <!--Card-->
                 <!-- Card Narrower -->
                 
