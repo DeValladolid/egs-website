@@ -178,7 +178,7 @@ $rarityid = json_decode($file, true);
                         <div class="card elegant-color-dark card-cascade narrower">
                                 <!-- Card image -->
                                 <div class="view view-cascade overlay">
-                                        <h5 style="position: absolute;"><span id="" class="badge badge-primary <?php echo $image_data['games'][$i]['category'] ?>" style="position: absolute;"></span></h5>
+                                        <h5 style="position: absolute;"><span id="" class="badge badge-primary <?php echo $image_data['games'][$i]['category'] ?> prepurchase-<?php echo $image_data['games'][$i]['isPrepurchase'] ?>" style="position: absolute;"></span></h5>
                                         <div class="StoreCard-logo_cb78d7ad">
                                                 <div class="DynamicLogo-wrapper_b556470a DynamicLogo-smallContainer_a34ac250 DynamicLogo-visible_68a10102">
                                                     <img class="DynamicLogo-logo_f5443fce lazy" src="<?php echo $image_data['games'][$i]['DieselGameBoxLogo'] ?>">
