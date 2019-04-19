@@ -200,7 +200,7 @@ $rarityid = json_decode($file, true);
                                    <!-- Button -->
                                    <a class="btn btn-unique">Details</a>
                                    <!-- Button -->
-                                   <a class="btn btn-unique">Store</a>
+                                   <a href="https://www.epicgames.com/store/en-US/product/<?php echo $image_data['games'][$i]['com.epicgames.app.productSlug'] ?>" target="about_blank" class="btn btn-unique">Store</a>
                                 </div>
                                 <!-- Card footer -->
                                 <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
