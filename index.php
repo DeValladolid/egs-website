@@ -215,6 +215,9 @@ $rarityid = json_decode($file, true);
                              <!-- Card Narrower -->
                              <!--/.Card-->
                             </div>
+                            <?php
+                              }
+                            ?>
                             
                           </div>
             
