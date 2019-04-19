@@ -223,29 +223,6 @@ $rarityid = json_decode($file, true);
             
             
         </div>
-        <script>
-            $(document).ready(function(){
-            $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-                $("#engines").remove();
-             });
-</script>
 
  <!-- SCRIPTS -->
     
@@ -283,21 +260,7 @@ $rarityid = json_decode($file, true);
     $('.dataTables_length').addClass('bs-select');
     });
 </script>
-<script>
-            $(document).ready(function(){
-            $(".freegames").append("FREE");
-             });
-            </script>
-            <script>
-            $(document).ready(function(){
-            $(".collections").append("Collection");
-             });
-            </script>
-            <script>
-            $(document).ready(function(){
-            $(".prepurchase-true").append("Pre-Purchase");
-             });
-</script>
+<script src="script.js"></script>
     
 </body>
 </html>
