@@ -274,7 +274,30 @@ $rarityid = json_decode($file, true);
             $(document).ready(function(){
             $(".prepurchase-true").append("Pre-Purchase");
              });
-            </script>
+</script>
     
 </body>
+<script>
+            $(document).ready(function(){
+            $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+                $("#engines").remove();
+             });
+            </script>
 </html>
