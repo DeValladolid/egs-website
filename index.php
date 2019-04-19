@@ -171,7 +171,7 @@ $rarityid = json_decode($file, true);
                     <?php
                         for ($i = 0; $i < count($image_data['games']); $i ++) {
                             ?>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 games">
                               <!--Card-->
                 <!-- Card Narrower -->
                 
