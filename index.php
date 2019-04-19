@@ -171,14 +171,14 @@ $rarityid = json_decode($file, true);
                     <?php
                         for ($i = 0; $i < count($image_data['games']); $i ++) {
                             ?>
-                            <div class="col-sm-4 games">
+                            <div class="col-sm-4 games" id="<?php echo $image_data['games'][$i]['category'] ?>">
                               <!--Card-->
                 <!-- Card Narrower -->
                 
                         <div class="card elegant-color-dark card-cascade narrower">
                                 <!-- Card image -->
                                 <div class="view view-cascade overlay">
-                                        <h5 style="position: absolute;"><span class="badge badge-primary" style="position: absolute;"></span></h5>
+                                        <h5 style="position: absolute;"><span id="" class="badge badge-primary <?php echo $image_data['games'][$i]['category'] ?>" style="position: absolute;"></span></h5>
                                         <div class="StoreCard-logo_cb78d7ad">
                                                 <div class="DynamicLogo-wrapper_b556470a DynamicLogo-smallContainer_a34ac250 DynamicLogo-visible_68a10102">
                                                     <img class="DynamicLogo-logo_f5443fce lazy" src="<?php echo $image_data['games'][$i]['DieselGameBoxLogo'] ?>">
@@ -260,8 +260,21 @@ $rarityid = json_decode($file, true);
     $('.dataTables_length').addClass('bs-select');
     });
 </script>
-<script src="js/polyfill.diesel-site.f24ba8270199649c5b9e.js"></script>
-<script src="js/main.diesel-site.f24ba8270199649c5b9e.js"></script>
+<script>
+            $(document).ready(function(){
+            $(".freegames").append("FREE");
+             });
+            </script>
+            <script>
+            $(document).ready(function(){
+            $(".collections").append("Collection");
+             });
+            </script>
+            <script>
+            $(document).ready(function(){
+            $(".prepurchase-true").append("Pre-Purchase");
+             });
+            </script>
     
 </body>
 </html>
