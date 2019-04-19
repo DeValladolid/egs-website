@@ -1,12 +1,12 @@
 <?php
 //	$subscription_key  ='7a0ba247-ff23-4c94-b982-fe1c696d1051';
-//    $host = 'http://epigames-website.herokuapp.com/api.php';
+//    $host = 'https://epicgames.lazylinks.fr/api.php';
 //    $request_headers = array(
 //                    "x-api-key: " . $subscription_key,
 //                    'Content-Type: application/json'
 //                );
 //
-//	$url = "http://epigames-website.herokuapp.com/api.php";
+//	$url = "https://epicgames.lazylinks.fr/api.php";
 //
 //    $response = callAPI("GET", $host, "");
 //
@@ -64,8 +64,8 @@ $opts = array(
 );
 $context = stream_context_create($opts);
 // Open the file using the HTTP headers set above
-$file = file_get_contents('http://epigames-website.herokuapp.com/api.php', false, $context);
-$rarity = file_get_contents('http://epigames-website.herokuapp.com/api.php', false, $context);
+$file = file_get_contents('https://epicgames.lazylinks.fr/api.php', false, $context);
+$rarity = file_get_contents('https://epicgames.lazylinks.fr/api.php', false, $context);
 $image_data = json_decode($file, true);
 $rarityid = json_decode($file, true);
 ?>
