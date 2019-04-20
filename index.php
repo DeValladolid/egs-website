@@ -237,6 +237,12 @@ $rarityid = json_decode($file, true);
   <script type="text/javascript" src="lazyload/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="lazyload/jquery.lazy.plugins.min.js"></script>
     
+    <script>
+    $(function() {
+        $('.lazy').Lazy();
+    });
+    </script>
+
 <script src="script.js"></script>
     
 </body>
