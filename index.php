@@ -77,7 +77,25 @@ $rarityid = json_decode($file, true);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Epic Games Data</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Epic Games Data - Epic Games Store database</title>
+    <meta name="title" content="Epic Games Data - Epic Games Store database">
+    <meta name="description" content="Epic Games Store games database.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://epicgames.lazylinks.fr/">
+    <meta property="og:title" content="Epic Games Data - Epic Games Store database">
+    <meta property="og:description" content="Epic Games Store games database.">
+    <meta property="og:image" content="https://i.imgur.com/PX37MBm.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://epicgames.lazylinks.fr/">
+    <meta property="twitter:title" content="Epic Games Data - Epic Games Store database">
+    <meta property="twitter:description" content="Epic Games Store games database.">
+    <meta property="twitter:image" content="https://i.imgur.com/PX37MBm.jpg">
 
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
