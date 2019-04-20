@@ -224,7 +224,7 @@ $rarityid = json_decode($file, true);
                                 <!-- Card footer -->
                                 <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
                                    <ul class="list-unstyled list-inline font-small">
-                                      <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>23/03/2019</li>
+                                      <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i><span class="shortDateFormat"><?php echo $image_data['games'][$i]['effectivedate'] ?></span></li>
                                       <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-money-bill-wave"></i> <?php echo $image_data['games'][$i]['discountprice'] ?></a></li>
                                       <li class="list-inline-item pr-2 white-text"><i class="fas fa-chevron-up"></i> - <i class="fas fa-chevron-down"></i></li>
             
@@ -302,6 +302,28 @@ $rarityid = json_decode($file, true);
 			})();
   </script>
 
+<script src="js/jquery-dateformat.min.js"></script>
+<script>
+    jQuery(function() {
+          var shortDateFormat = 'dd/MM/yyyy';
+          var longDateFormat  = 'dd/MM/yyyy HH:mm:ss';
+
+          jQuery(".shortDateFormat").each(function (idx, elem) {
+              if (jQuery(elem).is(":input")) {
+                  jQuery(elem).val(jQuery.format.date(jQuery(elem).val(), shortDateFormat));
+              } else {
+                  jQuery(elem).text(jQuery.format.date(jQuery(elem).text(), shortDateFormat));
+              }
+          });
+          jQuery(".longDateFormat").each(function (idx, elem) {
+              if (jQuery(elem).is(":input")) {
+                  jQuery(elem).val(jQuery.format.date(jQuery(elem).val(), longDateFormat));
+              } else {
+                  jQuery(elem).text(jQuery.format.date(jQuery(elem).text(), longDateFormat));
+              }
+          });
+      });
+</script>
 <script src="script.js"></script>
     
 </body>
