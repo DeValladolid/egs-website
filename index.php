@@ -200,10 +200,10 @@ $rarityid = json_decode($file, true);
                                         <h5 style="position: absolute;"><span id="" class="badge badge-primary <?php echo $image_data['games'][$i]['category'] ?> prepurchase-<?php echo $image_data['games'][$i]['isPrepurchase'] ?>" style="position: absolute;"></span></h5>
                                         <div class="StoreCard-logo_cb78d7ad">
                                                 <div class="DynamicLogo-wrapper_b556470a DynamicLogo-smallContainer_a34ac250 DynamicLogo-visible_68a10102">
-                                                    <img class="DynamicLogo-logo_f5443fce" src="<?php echo $image_data['games'][$i]['DieselGameBoxLogo'] ?>">
+                                                    <img class="DynamicLogo-logo_f5443fce lazyload" data-src="<?php echo $image_data['games'][$i]['DieselGameBoxLogo'] ?>">
                                                 </div>
                                         </div>
-                                   <img  class="card-img-top lazyload" data-src="<?php echo $image_data['games'][$i]['DieselStoreFrontWide'] ?>" alt="">
+                                   <img  class="card-img-top" src="<?php echo $image_data['games'][$i]['DieselStoreFrontWide'] ?>" alt="">
                                    <a>
                                       <div class="mask rgba-white-slight"></div>
                                    </a>
