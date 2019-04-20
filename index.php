@@ -114,7 +114,7 @@ $rarityid = json_decode($file, true);
             img:not(.initial) {
               transition: opacity 1s;
             }
-            
+
             img.initial,
             img.loaded,
             img.error {
@@ -203,7 +203,7 @@ $rarityid = json_decode($file, true);
                                                     <img class="DynamicLogo-logo_f5443fce" src="<?php echo $image_data['games'][$i]['DieselGameBoxLogo'] ?>">
                                                 </div>
                                         </div>
-                                   <img  class="card-img-top lazy" data-src="<?php echo $image_data['games'][$i]['DieselStoreFrontWide'] ?>" alt="">
+                                   <img  class="card-img-top" data-src="<?php echo $image_data['games'][$i]['DieselStoreFrontWide'] ?>" alt="">
                                    <a>
                                       <div class="mask rgba-white-slight"></div>
                                    </a>
