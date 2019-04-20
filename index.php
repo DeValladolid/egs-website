@@ -245,20 +245,7 @@ $rarityid = json_decode($file, true);
                                           <a class="downvote"></a>
                                           <a class="star"></a>
                                         </div>
-                                        <script>$('#topic').upvote();
-                                          $('#topic').upvote({count: 5, upvoted: true});
-                                          $('#topic').upvote({count: 5, downvoted: true});
-                                          $('#topic').upvote({count: 5, upvoted: true, starred: true});
-
-                                          var callback = function(data) {
-                                              $.ajax({
-                                                  url: '/vote',
-                                                  type: 'post',
-                                                  data: data
-                                              });
-                                          };
-                                          $('#topic-123').upvote({id: 123, callback: callback});
-                                        </script>
+                                        <script>Upvote.create('id');</script>
                                       </li>
                                       <li class="list-inline-item pr-2 white-text"><a><i class="fas fa-chevron-up upvote"></i></a> 0 <a><i class="fas fa-chevron-down downvote"></i></a></li>
             
