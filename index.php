@@ -239,7 +239,11 @@ $rarityid = json_decode($file, true);
     
     <script>
     $(function() {
-        $('.lazy').Lazy();
+        $('.lazy').lazy({
+          effect: "fadeIn",
+          effectTime: 2000,
+          threshold: 0
+        });
     });
     </script>
 
