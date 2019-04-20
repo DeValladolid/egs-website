@@ -1,12 +1,12 @@
 <?php
 //	$subscription_key  ='c7be03da1bmsh3f62a5a4f8824a4p155957jsnfeea4ebe4287';
-//    $host = 'https://egs-catalog.p.rapidapi.com/api.php';
+//    $host = 'https://epicgames.lazylinks.fr/api.php';
 //    $request_headers = array(
 //                    "X-RapidAPI-Key: " . $subscription_key,
 //                    'Content-Type: application/json'
 //                );
 //
-//	$url = "https://egs-catalog.p.rapidapi.com/api.php";
+//	$url = "https://epicgames.lazylinks.fr/api.php";
 //
 //    $response = callAPI("GET", $host, "");
 //
@@ -65,8 +65,8 @@ $opts = array(
 );
 $context = stream_context_create($opts);
 // Open the file using the HTTP headers set above
-$file = file_get_contents('https://egs-catalog.p.rapidapi.com/api.php', false, $context);
-$rarity = file_get_contents('https://egs-catalog.p.rapidapi.com/api.php', false, $context);
+$file = file_get_contents('https://epicgames.lazylinks.fr/api.php', false, $context);
+$rarity = file_get_contents('https://epicgames.lazylinks.fr/api.php', false, $context);
 $image_data = json_decode($file, true);
 $rarityid = json_decode($file, true);
 ?>
