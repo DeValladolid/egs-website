@@ -237,15 +237,24 @@ $rarityid = json_decode($file, true);
   <script type="text/javascript" src="lazyload/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="lazyload/jquery.lazy.plugins.min.js"></script>
     
-    <script>
-    $(function() {
-        $('.lazy').lazy({
-          effect: "fadeIn",
-          effectTime: 1000,
-          threshold: 0
-        });
-    });
-    </script>
+    <script type="text/javascript">
+  $(function() {
+	  var sidebar = $('div#sidebar'), loadedElements = 0;
+
+	  $('.lazy').lazy({
+		  effect: "fadeIn",
+		  effectTime: 2000,
+		  threshold: 0,
+		  beforeLoad: function(element){
+			  console.log('image "' + stripTime(element.data('src')) + '" is about to be loaded');
+		  },
+		  onFinishedAll: function() {
+			  console.log('finished loading ' + loadedElements + ' elements');
+			  console.log('lazy instance is about to be destroyed')
+		  }
+	  });
+  });
+  </script>
 
 <script src="script.js"></script>
     
