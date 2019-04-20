@@ -238,12 +238,14 @@ $rarityid = json_decode($file, true);
     <script type="text/javascript" src="lazyload/jquery.lazy.plugins.min.js"></script>
     
     <script>
-    $(function() {
-        $('.lazy').lazy({
-          effect: "fadeIn",
-          effectTime: 2000,
-          threshold: 0
-        });
+    $('.lazy').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
     });
     </script>
 
