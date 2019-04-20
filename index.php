@@ -238,9 +238,12 @@ $rarityid = json_decode($file, true);
     <script type="text/javascript" src="lazyload/jquery.lazy.plugins.min.js"></script>
     
     <script>
-    $('.lazy').Lazy({
-        // your configuration goes here
-        effect: 'fadeIn'
+    $(function() {
+        $('.lazy').lazy({
+          effect: "fadeIn",
+          effectTime: 1000,
+          threshold: 0
+        });
     });
     </script>
 
