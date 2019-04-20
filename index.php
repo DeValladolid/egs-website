@@ -235,7 +235,7 @@ $rarityid = json_decode($file, true);
                                    <ul class="list-unstyled list-inline font-small">
                                       <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i><span class="shortDateFormat"><?php echo $image_data['games'][$i]['effectivedate'] ?></span></li>
                                       <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-money-bill-wave"></i> <?php echo $image_data['games'][$i]['discountprice'] ?></a></li>
-                                      <li class="list-inline-item pr-2 white-text"><a href="#"><i class="fas fa-chevron-up upvote"></i></a> 0 <a href="#"><i class="fas fa-chevron-down downvote"></i></a></li>
+                                      <li class="list-inline-item pr-2 white-text"><a><i class="fas fa-chevron-up upvote"></i></a> 0 <a><i class="fas fa-chevron-down downvote"></i></a></li>
             
                                    </ul>
                                 </div>
