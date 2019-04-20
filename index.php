@@ -60,7 +60,7 @@ $opts = array(
             "Cookie: foo=bar\r\n" .
             "User-agent: BROWSER-DESCRIPTION-HERE\r\n".
             "X-RapidAPI-Host: egs-catalog.p.rapidapi.com".
-            "X-RapidAPI-Key: c7be03da1bmsh3f62a5a4f8824a4p155957jsnfeea4ebe4287\r\n"
+            "X-RapidAPI-Key: c7be03da1bmsh3f62a5a4f8824a4p155957jsnfeea4ebe4287"
     )
 );
 $context = stream_context_create($opts);
