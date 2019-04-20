@@ -240,11 +240,7 @@ $rarityid = json_decode($file, true);
     <script>
     $('.lazy').Lazy({
         // your configuration goes here
-        effect: 'fadeIn',
-        visibleOnly: true,
-        onError: function(element) {
-            console.log('error loading ' + element.data('src'));
-        }
+        effect: 'fadeIn'
     });
     </script>
 
