@@ -105,6 +105,25 @@ $rarityid = json_decode($file, true);
             .row > div[class*='col-'] {
             display: flex;
             }
+
+            img {
+            border: 0;
+            opacity: 0;
+            }
+
+            img:not(.initial) {
+              transition: opacity 1s;
+            }
+            
+            img.initial,
+            img.loaded,
+            img.error {
+              opacity: 1;
+            }
+
+            img:not([src]) {
+              visibility: hidden;
+            }
             </style>
 
 </head>
