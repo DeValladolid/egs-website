@@ -240,7 +240,6 @@ $rarityid = json_decode($file, true);
     <script>
     $('.lazy').Lazy({
         // your configuration goes here
-        scrollDirection: 'vertical',
         effect: 'fadeIn',
         visibleOnly: true,
         onError: function(element) {
