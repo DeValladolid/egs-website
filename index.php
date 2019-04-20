@@ -77,7 +77,7 @@ $rarityid = json_decode($file, true);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Epic Games Data</title>
 
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -87,6 +87,8 @@ $rarityid = json_decode($file, true);
     <link href="./css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-2.css">
+    <link rel="stylesheet" href="dist/jquery.upvote.css">
+    <script src="dist/upvotejs/upvotejs.vanilla.js"></script>
     <!--Epic Games Store Styles-->
     <style>
             .black-skin {
@@ -235,6 +237,14 @@ $rarityid = json_decode($file, true);
                                    <ul class="list-unstyled list-inline font-small">
                                       <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i><span class="shortDateFormat"><?php echo $image_data['games'][$i]['effectivedate'] ?></span></li>
                                       <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-money-bill-wave"></i> <?php echo $image_data['games'][$i]['discountprice'] ?></a></li>
+                                      <li class="list-inline-item pr-2">
+                                        <div id="the-id" class="upvotejs">
+                                          <a class="upvote"></a>
+                                            <span class="count">0</span>
+                                          <a class="downvote"></a>
+                                          <a class="star"></a>
+                                        </div>
+                                      </li>
                                       <li class="list-inline-item pr-2 white-text"><a><i class="fas fa-chevron-up upvote"></i></a> 0 <a><i class="fas fa-chevron-down downvote"></i></a></li>
             
                                    </ul>
@@ -263,8 +273,8 @@ $rarityid = json_decode($file, true);
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="lazyload/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="lazyload/jquery.lazy.plugins.min.js"></script>
-  
+  <script type="text/javascript" src="lazyload/jquery.lazy.plugins.min.js"></script>
+
   
   <script src="js/lazyload.js"></script>  
   <script type="text/javascript">
