@@ -1,12 +1,12 @@
 <?php
-//	$subscription_key  ='7a0ba247-ff23-4c94-b982-fe1c696d1051';
-//    $host = 'https://epicgames.lazylinks.fr/api.php';
+//	$subscription_key  ='a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775';
+//    $host = 'https://egs-catalog.p.rapidapi.com/';
 //    $request_headers = array(
-//                    "x-api-key: " . $subscription_key,
+//                    "X-RapidAPI-Key: " . $subscription_key,
 //                    'Content-Type: application/json'
 //                );
 //
-//	$url = "https://epicgames.lazylinks.fr/api.php";
+//	$url = "https://egs-catalog.p.rapidapi.com/";
 //
 //    $response = callAPI("GET", $host, "");
 //
@@ -39,7 +39,7 @@
 //        curl_setopt($curl, CURLOPT_URL, $url);
 //        curl_setopt($curl, CURLOPT_USERAGENT, $url);
 //        curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-//            'x-api-key: 7a0ba247-ff23-4c94-b982-fe1c696d1051',
+//            'X-RapidAPI-Key: a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775',
 //            'Host: fnbr.co',
 //            'cache-control: max-age=1800'
 //        ));
@@ -52,20 +52,21 @@
 //        curl_close($curl);
 //        return $result;
 //    }
-$subscription_key  ='7a0ba247-ff23-4c94-b982-fe1c696d1051';
+$subscription_key  ='a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775';
 $opts = array(
     'http'=>array(
         'method'=>"GET",
         'header'=>"Accept-language: en\r\n" .
             "Cookie: foo=bar\r\n" .
             "User-agent: BROWSER-DESCRIPTION-HERE\r\n".
-            "x-api-key: 7a0ba247-ff23-4c94-b982-fe1c696d1051\r\n"
+            "X-RapidAPI-Host: egs-catalog.p.rapidapi.com".
+            "X-RapidAPI-Key: a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775\r\n"
     )
 );
 $context = stream_context_create($opts);
 // Open the file using the HTTP headers set above
-$file = file_get_contents('https://epicgames.lazylinks.fr/api.php', false, $context);
-$rarity = file_get_contents('https://epicgames.lazylinks.fr/api.php', false, $context);
+$file = file_get_contents('https://egs-catalog.p.rapidapi.com/', false, $context);
+$rarity = file_get_contents('https://egs-catalog.p.rapidapi.com/', false, $context);
 $image_data = json_decode($file, true);
 $rarityid = json_decode($file, true);
 ?>
