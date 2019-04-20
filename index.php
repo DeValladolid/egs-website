@@ -242,26 +242,7 @@ $rarityid = json_decode($file, true);
         $('.lazy').lazy({
           effect: "fadeIn",
           effectTime: 1000,
-          threshold: 0,
-          beforeLoad: function(element){
-            console.log('image "' + stripTime(element.data('src')) + '" is about to be loaded');
-          },
-          afterLoad: function(element) {
-            loadedElements++;
-            $('p span', sidebar).html(strPad(loadedElements, '0', 2));
-            $('ul', sidebar).append('<li>element ' + strPad(loadedElements, '0', 2) + ' loaded</li>');
-            console.log('image "' + stripTime(element.data('src')) + '" was loaded successfully');
-          },
-          onError: function(element) {
-            loadedElements++;
-            $('p span', sidebar).html(strPad(loadedElements, '0', 2));
-            $('ul', sidebar).append('<li>element ' + strPad(loadedElements, '0', 2) + ' NOT loaded</li>');
-            console.log('image "' + stripTime(element.data('src')) + '" could not be loaded');
-          },
-          onFinishedAll: function() {
-            console.log('finished loading ' + loadedElements + ' elements');
-            console.log('lazy instance is about to be destroyed')
-          }
+          threshold: 0
         });
     });
   </script>
