@@ -1,5 +1,5 @@
 <?php
-$hostname = "https://epicgames.lazylinks.fr";
+$hostname = "localhost:3306";
 $db_username = "root";
 $db_password = "cascarilla6a";
 
