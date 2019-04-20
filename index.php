@@ -226,7 +226,7 @@ $rarityid = json_decode($file, true);
                                    <ul class="list-unstyled list-inline font-small">
                                       <li class="list-inline-item pr-2 white-text"><i class="far fa-clock pr-1"></i>23/03/2019</li>
                                       <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fas fa-money-bill-wave"></i> <?php echo $image_data['games'][$i]['discountprice'] ?></a></li>
-                                      <li class="list-inline-item pr-2 white-text"><i class="fas fa-star"> </i> </i>-</li>
+                                      <li class="list-inline-item pr-2 white-text"><i class="fas fa-chevron-up"></i> - <i class="fas fa-chevron-down"></i></li>
             
                                    </ul>
                                 </div>
