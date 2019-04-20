@@ -1,5 +1,5 @@
 <?php
-//	$subscription_key  ='a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775';
+//	$subscription_key  ='c7be03da1bmsh3f62a5a4f8824a4p155957jsnfeea4ebe4287';
 //    $host = 'https://egs-catalog.p.rapidapi.com/';
 //    $request_headers = array(
 //                    "X-RapidAPI-Key: " . $subscription_key,
@@ -39,7 +39,7 @@
 //        curl_setopt($curl, CURLOPT_URL, $url);
 //        curl_setopt($curl, CURLOPT_USERAGENT, $url);
 //        curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-//            'X-RapidAPI-Key: a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775',
+//            'X-RapidAPI-Key: c7be03da1bmsh3f62a5a4f8824a4p155957jsnfeea4ebe4287',
 //            'Host: fnbr.co',
 //            'cache-control: max-age=1800'
 //        ));
@@ -52,7 +52,7 @@
 //        curl_close($curl);
 //        return $result;
 //    }
-$subscription_key  ='a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775';
+$subscription_key  ='c7be03da1bmsh3f62a5a4f8824a4p155957jsnfeea4ebe4287';
 $opts = array(
     'http'=>array(
         'method'=>"GET",
@@ -60,7 +60,7 @@ $opts = array(
             "Cookie: foo=bar\r\n" .
             "User-agent: BROWSER-DESCRIPTION-HERE\r\n".
             "X-RapidAPI-Host: egs-catalog.p.rapidapi.com".
-            "X-RapidAPI-Key: a3b5e85e3cmsh8dbdbf13101961fp1a2fbajsn3a6a9a7b6775\r\n"
+            "X-RapidAPI-Key: c7be03da1bmsh3f62a5a4f8824a4p155957jsnfeea4ebe4287\r\n"
     )
 );
 $context = stream_context_create($opts);
