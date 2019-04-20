@@ -106,22 +106,22 @@ $rarityid = json_decode($file, true);
             display: flex;
             }
 
-            img {
+            .lazyload {
             border: 0;
             opacity: 0;
             }
 
-            img:not(.initial) {
+            .lazyload:not(.initial) {
               transition: opacity 1s;
             }
 
-            img.initial,
-            img.loaded,
-            img.error {
+            .lazyload.initial,
+            .lazyload.loaded,
+            .lazyload.error {
               opacity: 1;
             }
 
-            img:not([src]) {
+            .lazyload:not([src]) {
               visibility: hidden;
             }
             </style>
@@ -203,7 +203,7 @@ $rarityid = json_decode($file, true);
                                                     <img class="DynamicLogo-logo_f5443fce" src="<?php echo $image_data['games'][$i]['DieselGameBoxLogo'] ?>">
                                                 </div>
                                         </div>
-                                   <img  class="card-img-top" data-src="<?php echo $image_data['games'][$i]['DieselStoreFrontWide'] ?>" alt="">
+                                   <img  class="card-img-top lazyload" data-src="<?php echo $image_data['games'][$i]['DieselStoreFrontWide'] ?>" alt="">
                                    <a>
                                       <div class="mask rgba-white-slight"></div>
                                    </a>
